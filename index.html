@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ateliê Metamorfose — Moda Modesta Autoral</title>
+  
+  <!-- Conexão com o CSS -->
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+  <!-- Link para pular direto para o conteúdo -->
+  <a href="#conteudo" class="sr-only focus-visible">
+    Ir para o conteúdo principal
+  </a>
+
+  <!-- Cabeçalho do Site -->
+    <!-- Cabeçalho do Site -->
+  <header class="header">
+    <div class="header-container">
+      <a href="#inicio" class="logo-crop">
+        <img src="images/ateliemetaum.jpeg" alt="Ateliê Metamorfose" class="logo-image">
+      </a>
+
+      <button type="button" class="menu-toggle" id="menu-toggle"
+              aria-expanded="false" aria-controls="menu-principal">
+        Menu
+      </button>
+
+      <nav class="nav-desktop" id="menu-principal" aria-label="Menu principal">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#colecao">Coleção</a></li>
+          <li><a class="nav-link" href="#sob-medida">Sob medida</a></li>
+          <li><a class="nav-link" href="#sobre">Nosso ateliê</a></li>
+        </ul>
+      </nav>
+
+      <a href="#atendimento" class="btn-buy-header">
+        Atendimento 🛍️ (<span id="cart-count">0</span>)
+      </a>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main id="conteudo">
+
+    <!-- Seção de Destaque (Hero) -->
+    <section id="inicio" class="hero-section">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <p class="subtitle">Moda modesta autoral</p>
+        </div>
+
+        <h1 class="hero-title">
+          Feita para
+          <span class="hero-title-italic">revelar você.</span>
+        </h1>
+
+        <p class="hero-description">
+          Peças únicas que unem modéstia, feminilidade e um caimento pensado
+          para o seu corpo.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#colecao" class="btn btn-primary">
+            Conheça a coleção ➔
+          </a>
+
+          <a href="#sob-medida" class="btn btn-outline">
+            Como funciona
+          </a>  
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <div class="hero-frame">
+          <img
+            src="images/mulher-vestido-longo.png"
+            alt="Mulher com vestido longo branco em uma paisagem natural"
+            class="hero-img"
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Diferenciais -->
+    <section class="features-section">
+      <div class="features-container">
+        <div class="feature-item">
+          <span class="feature-number">01</span>
+          <div>
+            <h2 class="feature-title">Modelagem exclusiva</h2>
+            <p class="feature-text">Criada a partir das suas medidas</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <span class="feature-number">02</span>
+          <div>
+            <h2 class="feature-title">Feito à mão</h2>
+            <p class="feature-text">Cuidado em cada acabamento</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <span class="feature-number">03</span>
+          <div>
+            <h2 class="feature-title">Escolhas conscientes</h2>
+            <p class="feature-text">Peças feitas para permanecer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catálogo de Produtos -->
+    <section id="colecao" class="collection-section">
+      <div class="collection-header">
+        <div>
+          <p class="subtitle">Nossa seleção</p>
+          <h2 class="section-title">
+            Vestidos que contam <span class="italic-purple">histórias</span>
+          </h2>
+        </div>
+        <p class="collection-intro">
+          Cada modelo pode ser personalizado em cores, tecidos e detalhes para ter a sua identidade.
+        </p>
+      </div>
+
+      <div class="products-grid">
+        <!-- Produto 1 -->
+        <article class="product-card">
+          <div class="product-image-container">
+            <img
+              src="images/modelo1.png"
+              alt="Mulher usando vestido longo vermelho"
+              class="product-image"
+            >
+          </div>
+          <div class="product-info">
+            <div class="product-header">
+              <h3 class="product-title">Vestido Aurora</h3>
+              <span class="product-price">R$ 489,00</span>
+            </div>
+            <p class="product-description">Silhueta fluida, mangas longas e cintura delicadamente marcada.</p>
+           <button type="button" class="btn btn-card">Adicionar item</button>
+          </div>
+        </article>
+
+        <!-- Produto 2 -->
+        <article class="product-card">
+          <div class="product-image-container">
+            <img
+              src="images/modelo2.png"
+              alt="Mulher usando vestido longo preto"
+              class="product-image"
+            >
+          </div>
+          <div class="product-info">
+            <div class="product-header">
+              <h3 class="product-title">Vestido Essência</h3>
+              <span class="product-price">R$ 529,00</span>
+            </div>
+            <p class="product-description">Elegância atemporal em corte amplo, criado para acompanhar seus movimentos.</p>
+            <button type="button" class="btn btn-card">Adicionar item</button>
+          </div>
+        </article>
+
+        <!-- Produto 3 -->
+        <article class="product-card">
+          <div class="product-image-container">
+            <img
+              src="images/modelo3.png"
+              alt="Mulher usando vestido longo verde"
+              class="product-image"
+            >
+          </div>
+          <div class="product-info">
+            <div class="product-header">
+              <h3 class="product-title">Vestido Jardim</h3>
+              <span class="product-price">R$ 459,00</span>
+            </div>
+            <p class="product-description">
+              Leveza, conforto e caimento impecável em uma peça cheia de presença.
+            </p>
+            <button type="button" class="btn btn-card">Adicionar item</button>
+          </div>
+       </article>
+      </div><!-- fim .products-grid -->
+    </section>
+
+    <section id="sob-medida" class="custom-section">
+      <div class="custom-container">
+        <div class="custom-image-wrapper">
+          <img
+            src="images/autora.png"
+            alt="Mulher com look elegante"
+            class="custom-image"
+          >
+        </div>
+
+        <div class="custom-content">
+          <p class="subtitle light">Do seu jeito</p>
+          <h2 class="custom-title">Seu corpo não precisa caber em um padrão.</h2>
+          <p class="custom-description">
+            Em nosso atendimento, ouvimos sua história, entendemos suas preferências e construímos uma peça que respeita seu estilo e suas medidas.
+          </p>
+          <a
+            href="https://wa.me/?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20atendimento%20sob%20medida."
+            target="_blank"
+            class="btn btn-white"
+          >
+            Agendar atendimento ➔
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Atendimento: itens escolhidos + consulta de CEP (API ViaCEP) -->
+    <section id="atendimento" class="service-section" aria-labelledby="titulo-atendimento">
+      <h2 id="titulo-atendimento" class="section-title">Seu atendimento</h2>
+      <p id="aviso" class="notice" role="status" aria-live="polite"></p>
+      <ul id="lista-itens" class="items-list"></ul>
+
+      <form id="form-cep" class="cep-form">
+        <label for="cep">CEP para entrega</label>
+        <input id="cep" type="text" inputmode="numeric" maxlength="9"
+               placeholder="00000-000" autocomplete="postal-code">
+        <button type="submit" class="btn btn-outline">Buscar endereço</button>
+      </form>
+      <p id="endereco" class="address" aria-live="polite"></p>
+
+      <button id="btn-finalizar" type="button" class="btn btn-primary">
+        Enviar pelo WhatsApp ➔
+      </button>
+    </section>
+
+
+  </main>
+      
+
+  <!-- Rodapé -->
+  <footer id="sobre" class="footer">
+     <div class="footer-container">
+      <a href="#inicio" class="logo-crop">
+        <img src="images/ateliemetaum.jpeg" alt="Ateliê Metamorfose" class="logo-image">
+      </a>
+
+      <p class="footer-text">
+        Moda modesta, feminina e feita com cuidado para celebrar cada fase da sua história.
+      </p>
+
+      <p class="footer-copy">
+        © 2025 Ateliê Metamorfose
+      </p>
+      
+     <!-- Elemento atualizado pelo JavaScript -->
+     <p id="data-hora" class="footer-date"></p>
+    </div>
+  </footer>
+  <!-- Vinculação do JavaScript -->
+ <script src="scripts/script.js"></script>
+</body>
+</html>
